@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    color:  #031c31;
+}
+
+
+header img{
+    width: 160px;
+}
+
+.logo1{
+    margin-left: -15%;
+}
+.logo2{
+    margin-right: -15%;
+}
+
+.container-header{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    background-color: #eaeaea;
+    justify-content: space-around;
+}
+
+.container-img{
+    width: 100%;
+    height: 520px;
+    margin: 0 auto; 
+    background-image: url(../imagens/pexels-binyamin-mellish-186077.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+
+.container-img form{
+    background-color: rgba(221, 221, 221, 0.854);
+    padding: 20px;
+    max-width: 400px;
+    height: 470px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    box-shadow: 3px 3px 8px 0.1px #000000;
+    
+}
+
+
+.contein-input{
+    width: 95%;
+    margin: 0 auto;
+    padding: 2.5%;
+}
+
+.contein-input label{
+        font-family: 'Libre Baskerville', serif;
+}
+input[type="text"], input[type="email"]{
+    width: 100%;
+    margin: 0 auto;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    padding: 13px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+
+input[type="button"]{
+    width: 65%;
+    height: 45px;
+    margin: 30px auto;
+    border-radius: 10px;
+    border: none;
+    background-color: #031c31;
+    color: #ffffff;
+    padding: 15px;
+    cursor: pointer;
+
+}
+
+
+form h2, p{
+    max-width: 90%;
+    margin: 5px auto;
+    margin-left: 4%;
+    font-weight: normal;
+}
+
+form p{
+    font-weight: 600;
+}
+
+.arrow{
+    position: absolute;
+    width: 70px;
+    left: calc(50% - 35px);
+    bottom: -7%;
+}
+
+input[type="text"], input[type="email"]:focus{
+    outline: none;
+}
+
+.chamada{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0.2%;
+    height: 175px;
+    padding: 35px 5px;
+    text-align: center;
+    background-color: #d4effc;
+    color:  #031c31;
+}
+
+.chamada h2{
+    font-size: 30px;
+}
+.chamada p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #031c31cb;
+}
+
+.mosaico{
+    display: flex;
+}
+
+.image-mosaico{
+    width: 55%;
+    height: 250px;
+    margin: 0.2%;
+
+}
+.one{
+    background-image: url(../imagens/pexels-jason-boyd-3209035.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.two{
+    background-image: url(../imagens/pexels-max-rahubovskiy-7587864.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.three{
+    background-position: center;
+    background-size: cover;
+    background-image: url(../imagens/pexels-max-rahubovskiy-8089158.jpg);
+}
+.four{
+    background-position: center;
+    background-size: cover;
+    background-image: url(../imagens/pexels-pixabay-271647.jpg);
+}
+
+.text-mosaico{
+    width: 45%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.more-text{
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.text-mosaico p{
+    font-weight: 600;
+}
+.conteiner-text{
+    padding: 50px;
+    text-align: center;
+    background-color: #d4effc;
+}
+
+.conteiner-text p{
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: large;
+    /* text-align: justify; */
+}
+footer p{
+    font-weight: 600;
+    font-size: large;
+    text-align: center;
+}
+footer{
+    background-color: #eaeaea;
+    margin-top: 0.2%;
+    padding: 20px;
+}
+
+@media screen and (max-width:512px) {
+
+    .container-header{
+        flex-direction: column;
+    }
+    
+    .logo1, .logo2{
+        margin: 15px auto;
+    }
+    header img{
+        max-width:160px
+    }
+    .mosaico{
+        flex-direction: column;
+    }
+    .image-mosaico{
+        width: 100%;
+    }
+    .text-mosaico{
+        width: 100%;
+    }
+    .one {
+        order: 0;
+    }
+    .text-one{
+        order: 1;
+    }
+    .two {
+        order: 2;
+    }
+    .text-two{
+        order: 3;
+    }
+    .three {
+        order: 4;
+    }
+    .text-three{
+        order: 5;
+    }
+    .four {
+        order: 0;
+        
+    } 
+    .text-four{
+        order: 7;
+    } 
+}
+
+@media screen and (max-width:767px){
+    .container-img{
+        justify-content: center;
+    }
+    .conteiner-text{
+        text-align: justify;
+    }
+    
+}

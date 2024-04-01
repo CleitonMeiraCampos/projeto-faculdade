@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oswald&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/m.png" alt="logo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a id="btn-sobre" href="#sobre-mim">Sobre mim</a></li>
+                <li><a id="btn-formacao" href="#formacao">Formação</a></li>
+                <li><a id="btn-portifolio" href="#portifolio">Portifólio</a></li>
+                <li><a id="btn-contato" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre-mim">
+            <div class="img-perfil">
+                <img src="imagens/IMG-20230113-WA0111.jpg" alt="foto de perfil">
+            </div>
+            <div class="descricao-perfil">
+                <h2>Eu sou Cleiton Meira Campos</h2>
+                <p>Seja bem-vindo ao meu portfólio! Sou apaixonado por tecnologia e desenvolvimento de software, e este espaço é onde compartilho minha jornada, projetos e conquistas.</p>
+                <p>Sinta-se à vontade para explorar meu portfólio e entrar em contato comigo se quiser saber mais sobre meu trabalho ou discutir possíveis colaborações. Estou ansioso para conectar e colaborar com você!</p>
+                <p>Obrigado por visitar e espero que você se sinta inspirado pela minha jornada no mundo do desenvolvimento de software.</p>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="conteiner-form-dev">    
+                <div class="informacao-dev">
+                    <p>Está pronto para transformar suas ideias em realidade? Seja qual for o seu projeto ou necessidade, estou aqui para ajudar. Vamos trabalhar juntos para criar soluções incríveis e inovadoras. Entre em contato hoje mesmo e vamos começar!</p>
+                    <div class="perfil-dev">
+                        <img src="imagens/IMG-20230113-WA0111.jpg">
+                        <div class="text-dev">
+                            <h3>Cleiton Meira Campos</h3>
+                            <p>Desenvolvedor full-stack</p>
+                        </div>
+                    </div>
+                </div><!---informacao-dev-->
+                <div class="conteiner-form">
+                   <!--/*<h3>Entre em contato para mais informações</h3>-->
+                    <form>
+                        <label for="nome">Nome:</label>
+                        <input placeholder="Digite seu nome" type="text" name="nome">
+                        <label for="email">Email:</label>
+                        <input placeholder="Digite seu email" type="email" name="email">
+                        <textarea placeholder="Escreva uma mensagem"></textarea>
+                        <input type="button" value="Enviar">  
+                    </form>
+                </div><!---conteiner-form-->
+            </div>
+        </section>
+        <section id="formacao">
+            <div class="conteiner-formacoes">
+                <h2>Formação e Habilidades</h2>
+                <ul>
+                    <li>Cursando Front-End Master | Danki Code</li>
+                    <li>Cursando Desenvolvimento Back-End | Danki Code</li>
+                    <li>Cursando Análise e Desenvolvimento de Sistemas | Uninter</li>
+                    <li>Cursando Inglês Basico ao Avançado | Uninter</li>
+                </ul>   
+            </div>
+            <div class="conteiner-linguaguens">
+                <div class="conteiner-linguaguens-text">
+                   <h2>Linguaguens que estou aprendendo</h2> 
+                   <h2>ou já tenho domínio:</h2> 
+                </div>
+                <div class="conteiner-img">
+                    <div>
+                        <img src="imagens/icons8-html5-48.png" alt="">
+                        <img src="imagens/icons8-css3-48.png" alt="">
+                    </div>
+                    <div>
+                        <img src="imagens/icons8-javascript-48.png" alt="">
+                        <img src="imagens/icons8-logo-java-coffee-cup-48.png" alt="">
+                    </div>
+                    <div>    
+                        <img src="imagens/icons8-mysql-48.png" alt="">
+                        <img src="imagens/icons8-nó-js-48.png" alt="">
+                    </div>    
+                </div>
+            </div>    
+        </section>
+        <section id="portifolio">
+            <h2>Projetos pessoais:</h2>
+            <div class="conteiner-projetos">
+                <div class="projetos">
+                    <p>Projeto-01</p>
+                    <a href="Projetos/Projeto-01/index.html">Clique Aqui</a>
+                </div>
+                <div class="projetos">
+                    <p>Projeto-02</p>
+                    <a href="Projetos/Projeto-02/index.html">Clique Aqui</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>@Todos os direitos reservados | Cleiton Campos</p>
+        </footer>
+    </main>
+</body>
+</html>
